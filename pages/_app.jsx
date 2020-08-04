@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
   console.log("[app.jsx] process.env.customKey", process.env.customKey);
@@ -7,9 +7,13 @@ export default function App({ Component, pageProps }) {
     process.env.undefiendedKey
   );
   console.log("[app.jsx] process.env.NODE_ENV", process.env.NODE_ENV);
-  console.log(
-    "[app.jsx] JSON.parse(process.env.NODE_ENV)",
-    JSON.parse(process.env.NODE_ENV)
-  );
+
+  useEffect(() => {
+    console.log(
+      "[app.jsx]<useEffect> process.env.NODE_ENV",
+      process.env.NODE_ENV
+    );
+  }, []);
+
   return <Component {...pageProps} />;
 }
