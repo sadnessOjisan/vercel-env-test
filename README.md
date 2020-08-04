@@ -15,10 +15,13 @@ Automatically optimizing pages... があるからビルド時にコンポーネ�
 ```
 $ curl https://vercel-env-test-git-preview.ojisan.vercel.app/api
 
-{"NODE_ENV":"production","OREORE_NODE_ENV":"oreoreore"}
+{"NODE_ENV":"production","OREORE_NODE_ENV":"oreoreore","customKey":"my-value"}
 ```
 
 コンソールから設定した値を API から見ることができる。
+customKey は next.config.js でセットしたもの。
+これも API 側から見ることができる。
+しかし、これはクライアント側からも見えるのでクレデンシャルを入れてはいけない
 
 ## memo
 
