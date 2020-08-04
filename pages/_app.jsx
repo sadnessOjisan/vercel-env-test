@@ -7,6 +7,10 @@ export default function App({ Component, pageProps }) {
     process.env.undefiendedKey
   );
   console.log("[app.jsx] process.env.NODE_ENV", process.env.NODE_ENV);
+  console.log(
+    "[app.jsx] process.env.OREORE_NODE_ENV",
+    process.env.OREORE_NODE_ENV
+  );
 
   useEffect(() => {
     console.log(
