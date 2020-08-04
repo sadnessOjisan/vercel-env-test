@@ -11,7 +11,6 @@ console.log(
   "[next.config.js] process.env.NEXT_PUBLIC_UNSET_FROM_CONSOLE",
   process.env.NEXT_PUBLIC_UNSET_FROM_CONSOLE
 );
-console.log("[next.config.js] process.env", process.env);
 
 module.exports = {
   env: {
