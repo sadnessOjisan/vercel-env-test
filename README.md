@@ -14,8 +14,10 @@ Automatically optimizing pages... があるからビルド時にコンポーネ�
 
 ## memo
 
+- https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
+  - NEXT*PUBLIC* について
+- next.config.js の env について
+  - https://nextjs.org/docs/api-reference/next.config.js/environment-variables
 - https://qiita.com/taroodr/items/f8a9eca4db06916d9ed7
 - https://qiita.com/chocomintkusoyaro/items/2b1bfa020b80522467ed
   - ビルド時、サーバーサイド、クライアントサイドでの読み込みについて
-- https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
-  - NEXT*PUBLIC* について
