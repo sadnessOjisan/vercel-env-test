@@ -5,6 +5,7 @@ export default (req, res) => {
     JSON.stringify({
       NODE_ENV: process.env.NODE_ENV,
       OREORE_NODE_ENV: process.env.OREORE_NODE_ENV || "",
+      customKey: process.env.customKey || "",
     })
   );
 };
